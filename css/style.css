@@ -1,0 +1,108 @@
+/* resete da pagina */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* zerar borda da pagina */
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #0d47a1;
+    color: white;
+    padding: 1em 0;
+}
+
+#titulo{
+    text-align: center;
+    margin: 0.5em;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 70em;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.menu{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu:hover{
+    background-color: cadetblue;
+}
+
+.img-perfil{
+    width: 15em;
+    border-radius: 10%;
+    margin-top: 0.5em;
+}
+
+.hero{
+    background-color: #e3f2fd;
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.hero h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.sobre, .servicos{
+    padding: 2em 0;
+    background-color: white;
+}
+
+.sobre h2, .servicos h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.sobre p{
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    margin-top: 1em;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+}
+.card{
+    background-color: #e3f2fd;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-1em);
+}
+
+footer{
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+}
